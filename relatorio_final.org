@@ -6,7 +6,8 @@
 #+OPTIONS: toc:nil
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
-
+#+LATEX_HEADER: \bibliographystyle{plain}
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
 * Introdução
 
 Esse relatório é gerado a partir de arquivos org-mode, imagens e
@@ -19,18 +20,54 @@ relatório.
 
 Mais detalhes de como gerar o relatório final estão disponíveis no
 README do repositório.
+#+LaTeX: \pagebreak
 
 * Exercício 7.28 (Tardos)
 #+INCLUDE: "7_28/cronograma.org" :lines "5-"
+#+LaTeX: \pagebreak
 
 * Exercício 6.3 (Papadimitriou)
 #+INCLUDE: "6_3/solucao.org" :lines "5-"
+#+LaTeX: \pagebreak
 
 * Exercício 6.30 (Papadimitriou)
 #+INCLUDE: "6_30/arvore_de_maxima_parcimonia.org" :lines "5-"
+#+LaTeX: \pagebreak
 
 * Exercício 4.5 (Tardos)
 #+INCLUDE: "4_5/solucao.org" :lines "5-"
+#+LaTeX: \pagebreak
 
 * Exercício 8.19 (Tardos)
 #+INCLUDE: "8_19/solucao.org" :lines "5-"
+
+#+LaTeX: \pagebreak
+#+LaTeX: \renewcommand\refname{Bibliografia}
+\begin{thebibliography}{1}
+
+\bibitem{Rosalind}
+Rosalind is a platform for learning bioinformatics through problem
+solving.
+\newblock http://rosalind.info/problems/locations/.
+
+\bibitem{Papadimitriou}
+Sanjoy Dasgupta, Christos Papadimitriou and Umesh Vazirani.
+\newblock {\em Algorithms}.
+\newblock McGraw-Hill Education, Boston, MA, USA, 2006.
+
+\bibitem{MR0378476}
+Richard~M. Karp.
+\newblock Reducibility among combinatorial problems.
+\newblock In {\em Complexity of computer computations ({P}roc.
+{S}ympos., {IBM}
+  {T}homas {J}. {W}atson {R}es. {C}enter, {Y}orktown {H}eights,
+  {N}.{Y}.,
+  1972)}, pages 85--103. Plenum, New York, 1972.
+
+\bibitem{Kleinberg:2005:AD:1051910}
+Jon Kleinberg and Eva Tardos.
+\newblock {\em Algorithm Design}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA,
+2005.
+
+\end{thebibliography}
